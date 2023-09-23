@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: lightblue; /* Changed background color to light blue */
+        }
+        .container {
+            margin-top: 50px;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <label for="celsius">Enter temperature in Celsius:</label>
+        <input type="number" id="celsius" placeholder="Celsius">
+        <br><br>
+        <label for="scale">Choose the target scale:</label>
+        <select id="scale">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <br><br>
+        <button onclick="convertTemperature()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convertTemperature() {
+            const celsiusInput = document.getElementById("celsius");
+            const scaleSelect = document.getElementById("scale");
+            const resultElement = document.getElementById("result");
+
+            if (celsiusInput.value === "") {
+                alert("Please enter a value.");
+                return;
+            }
+
+            const celsius = parseFloat(celsiusInput.value);
+            let convertedTemperature;
+
+            if (scaleSelect.value === "fahrenheit") {
+                convertedTemperature = (celsius * 9/5) + 32;
+                resultElement.textContent = `${celsius} Celsius is equal to ${convertedTemperature.toFixed(2)} Fahrenheit.`;
+            } else if (scaleSelect.value === "kelvin") {
+                convertedTemperature = celsius + 273.15;
+                resultElement.textContent = `${celsius} Celsius is equal to ${convertedTemperature.toFixed(2)} Kelvin.`;
+            }
+        }
+    </script>
+</body>
+</html>
