@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jagjot Singh Bhalla</h1>
+        <p>Web Developer</p>
+    </header>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hardworking College
+            Student seeking
+            employment.
+            Excellent time
+            management skills
+            combined with a superior
+            knowledge of the customer
+            service industry.
+            Bilingual, hardworking, and
+            ready to join my next
+            team.Highly skilled and
+            knowledgeable Content
+            Acquisitions Director,
+            bringing forth expertise
+            and experience overseeing
+            content generation and
+            acquisitions.
+            Adept in providing
+            leadership and effective
+            management that results in
+            high-impact consumer-focused products.
+            Capable of writing about a
+            variety of topics and
+            skilled in performing
+            research and achieving
+            ultimate preparedness for
+            a job.</p>
+    </section>
+    
+    <section class="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+            <li>
+                <h3>Web Developer/Cotent Writer</h3>
+                <p>The ArtMan Pune,NOV22-FEB23</p>
+                <p>PROVIDED EFFECTIVE TROUBLESHOOTING
+                    AND REMEDIATION FOR WEB
+                    APPLICATIONS.<br>
+                    PLANNED, DEVELOPED, TESTED,
+                    DEPLOYED, AND MAINTAINED WEB
+                    APPLICATIONS</p>
+            </li>
+            <!--<li>
+                <h3>Job Title 2</h3>
+                <p>Company Name - Date</p>
+                <p>Brief description of your role and accomplishments in this position.</p>>
+            </li>-->
+        </ul>
+    </section>
+    
+    <section class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <h3>MIT-WPU, PUNE</h3>
+                <p>Graduation - 2025</p>
+            </li>
+            <li>
+                <h3>O.P. JINDAL SCHOOL, RAIGARH</h3>
+                <p>High School - 2021</p>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach out to me at <a href="jagjotsinghbhalla.jsb@gmail.com">jagjotsinghbhalla.jsb@gmail.com</a></p>
+    </section>
+</body>
+</html>
+
